@@ -13,7 +13,7 @@ local function getexploit()
 		(unit and not syn and "Unit") or
 		(OXYGEN_LOADED and "Oxygen U") or
 		(IsElectron and "Electron") or
-	        (Fluxus and "Fluxus") or
+	        (Flux and "Fluxus") or
 		("Unsupported")
   
 	return exploit
@@ -60,28 +60,12 @@ local msg = {
 		["fields"]= {
         {
           ["name"]= "**💎Diamonds💎**",
-          ["value"]= "```yaml
-
-
-
-```".._G.DisplayDiamond.."```yaml
-
-
-
-```",
+          ["value"]= "```".._G.DisplayDiamond.."```",
           ["inline"]= true
         },
         {
           ["name"]= "**👣Rap👣**",
-          ["value"]= "```yaml
-
-
-
-```".._G.DisplayRap.."```yaml
-
-
-
-```",
+          ["value"]= "```".._G.DisplayRap.."```",
           ["inline"]= true
         }
       }
