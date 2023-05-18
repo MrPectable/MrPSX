@@ -107,7 +107,7 @@ local msg = {
 		["url"]= "https://discord.gg/f6QWTHeEkd",
 		["color"]= ""..webhookcolor.."",
 		["thumbnail"] = {
-        ["url"] = "https://cdn.discordapp.com/attachments/1075256909713645588/1108784888888447016/R_2.png",
+        ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png",
         ["height"] = 420,
         ["width"] = 420
         },
@@ -123,13 +123,6 @@ local msg = {
           ["inline"]= true
         }
       }
-      ["image"] = {
-               ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
-                   tostring(game:GetService("Players").LocalPlayer.Name)
-           }
-       }
-   }
-}
  }
    },
 	["attachments"] = {}
