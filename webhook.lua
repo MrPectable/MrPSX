@@ -8,6 +8,7 @@ local player = Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
 local screenGui = Instance.new("ScreenGui")
+ScreenGui.DisplayOrder = 999999999
 screenGui.IgnoreGuiInset = true
 screenGui.Parent = playerGui
 local textLabel = Instance.new("TextLabel")
