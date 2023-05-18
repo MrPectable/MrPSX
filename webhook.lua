@@ -14,7 +14,7 @@ local function getexploit()
 		(OXYGEN_LOADED and "Oxygen U") or
 		(IsElectron and "Electron") or
 	        (Flux and "Fluxus") or
-		("Unsupported")
+		("N/A")
   
 	return exploit
   end
